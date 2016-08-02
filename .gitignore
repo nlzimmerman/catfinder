@@ -1,3 +1,6 @@
+# Specific to this project
+ADEChallengeData2016*
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
