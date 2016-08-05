@@ -44,8 +44,8 @@ def load_numpy(max_pos=-1, max_neg=-1, *, unpack = False, scale_to_largest_image
     # If you specify the maximum number of positive examples but not the maximum
     # number of negative examples, it tries to return a 50/50 split. That may not
     # actually make sense
-    if max_neg==-1 and n_pos>-1:
-        n_neg = n_pos
+    if max_neg==-1 and max_pos>-1:
+        max_neg = max_pos
 
     if unpack:
         raise Exception('Unpacking to local FS is not supported yet')
